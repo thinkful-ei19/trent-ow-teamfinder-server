@@ -11,7 +11,10 @@ const seedPlayers = require('./db/seed/players');
 mongoose.connect(DATABASE_URL)
   .then(() => mongoose.connection.db.dropDatabase())
   .then(() => {
-    return Player.insertMany(seedPlayers);
+    return Promise.all([
+      Player.insertMany(seedPlayers),
+      Player.createIndexes()
+    ]);
   })
   .then(() => mongoose.disconnect())
   .catch(err => {

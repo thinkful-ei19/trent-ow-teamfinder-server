@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 const playerSchema = new mongoose.Schema({
-  userName: { type: String },
+  userName: { type: String, unique: true, required: true },
   skillRating: { type: Number },
   roles: { type: Array },
   heroPool: {type: Array},
