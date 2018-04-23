@@ -1,0 +1,26 @@
+[
+    {
+        "_id" : "000000000000000000000000",
+        "userName" : "user1",
+        "skillRating" : 2500,
+        "roles" : ["dps", "tank", "support", "flex"],
+        "heroPool": ["Mccree", "Winston", "Reinhardt"],
+        "bio" : ["Looking for cool players to rank up with"]
+    },
+    {
+        "_id" : "000000000000000000000001",
+        "userName" : "user2",
+        "skillRating" : 3000,
+        "roles" : ["tank", "support"],
+        "heroPool": ["Winston", "Reinhardt"],
+        "bio" : ["cool people welcome"]
+    },
+    {
+        "_id" : "000000000000000000000002",
+        "userName" : "user3",
+        "skillRating" : 2700,
+        "roles" : ["dps"],
+        "heroPool": ["Genji", "Widow"],
+        "bio" : ["no toxicity"]
+    }
+]
