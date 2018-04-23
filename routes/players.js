@@ -15,4 +15,22 @@ router.get('/players', (req,res,next) => {
   
 });
 
+router.post('/players', (req,res,next) => {
+  const {userName, skillRating, roles, heroPool, bio} = req.body;
+  const newPlayer = {
+    userName,
+    skillRating,
+    roles,
+    heroPool,
+    bio
+  };
+  return Player.create(newPlayer)
+    .then(result => {
+      res.location(`${req.originalUrl}/${result.id}`).status(201).json(result);
+    })
+    .catch(err => {
+      next(err);
+    });
+});
+
 module.exports = router;
