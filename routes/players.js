@@ -4,14 +4,15 @@ const express = require('express');
 const router = express.Router();
 
 const mongoose = require('mongoose');
+const Player = require('../models/player');
 
-const players = [
-  {username: 'trent', skillRating: 2400},
-  {username: 'user2', skillRating: 3000}
-];
 
 router.get('/players', (req,res,next) => {
-  return res.json(players);
+  return Player.find()
+    .then(result => {
+      res.json(result);
+    });
+  
 });
 
 module.exports = router;
