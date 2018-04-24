@@ -16,10 +16,10 @@ router.get('/players', (req,res,next) => {
 });
 
 router.post('/players', (req,res,next) => {
-  const {userName, skillRating, roles, heroPool, bio} = req.body;
+  const {userName, skillRating, roles, heroPool, bio} = req.body.players;
   const newPlayer = {
     userName,
-    skillRating,
+    skillRating: Number(skillRating),
     roles,
     heroPool,
     bio
