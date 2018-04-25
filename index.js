@@ -10,7 +10,7 @@ const { PORT, CLIENT_ORIGIN } = require('./config');
 const { dbConnect } = require('./db-mongoose');
 
 const localStrategy = require('./passport/local');
-// const jwtStrategy = require('./passport/jwt');
+const jwtStrategy = require('./passport/jwt');
 
 const playersRouter = require('./routes/players');
 const authRouter = require('./routes/auth');
@@ -33,6 +33,7 @@ app.use(
 app.use(express.json());
 
 passport.use(localStrategy);
+passport.use(jwtStrategy);
 
 app.use('/api', authRouter);
 app.use('/api', playersRouter);

@@ -5,14 +5,15 @@ const router = express.Router();
 
 const mongoose = require('mongoose');
 const Player = require('../models/player');
-// const passport = require('passport');
+const passport = require('passport');
 
 // const options = {session: false, failWithError: true};
 // const localAuth = passport.authenticate('local', options);
 
+const jwtAuth = passport.authenticate('jwt', { session: false, failWithError: true });
 
 
-router.get('/players', (req,res,next) => {
+router.get('/players', jwtAuth, (req,res,next) => {
   return Player.find()
     .then(result => {
       res.json(result);
