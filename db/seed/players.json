@@ -2,7 +2,7 @@
     {
         "_id" : "000000000000000000000000",
         "userName" : "user1",
-        "password": "123",
+        "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
         "skillRating" : 2500,
         "roles" : ["dps", "tank", "support", "flex"],
         "heroPool": ["Mccree", "Winston", "Reinhardt"],
@@ -11,7 +11,7 @@
     {
         "_id" : "000000000000000000000001",
         "userName" : "user2",
-        "password": "123",
+        "password": "$2a$10$zA2cQsPP7oul12j7PIv0/eiWZrX16oKaEzurG6NHQtHBUXU7DQgha",
         "skillRating" : 3000,
         "roles" : ["tank", "support"],
         "heroPool": ["Winston", "Reinhardt"],
@@ -20,7 +20,7 @@
     {
         "_id" : "000000000000000000000002",
         "userName" : "user3",
-        "password": "123",
+        "password": "$2a$10$zA2cQsPP7oul12j7PIv0/eiWZrX16oKaEzurG6NHQtHBUXU7DQgha",
         "skillRating" : 2700,
         "roles" : ["dps"],
         "heroPool": ["Genji", "Widow"],

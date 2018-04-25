@@ -4,15 +4,16 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const morgan = require('morgan');
-// const passport = require('passport');
+const passport = require('passport');
 
 const { PORT, CLIENT_ORIGIN } = require('./config');
 const { dbConnect } = require('./db-mongoose');
 
-// const localAuth = require('./passport/local');
+const localStrategy = require('./passport/local');
 // const jwtStrategy = require('./passport/jwt');
 
 const playersRouter = require('./routes/players');
+const authRouter = require('./routes/auth');
 
 const app = express();
 
@@ -28,8 +29,12 @@ app.use(
   })
 );
 
+
 app.use(express.json());
 
+passport.use(localStrategy);
+
+app.use('/api', authRouter);
 app.use('/api', playersRouter);
 
 app.use(function (req, res, next) {
