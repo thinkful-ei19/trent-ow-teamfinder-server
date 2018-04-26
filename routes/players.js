@@ -21,6 +21,21 @@ router.get('/players', jwtAuth, (req,res,next) => {
   
 });
 
+router.get('/players/:username', (req,res,next) => {
+  const {username} = req.params;
+  return Player.findOne({username})
+    .then(result => {
+      if (result) {
+        res.json(result);
+      } else {
+        next();
+      }
+    })
+    .catch(err => {
+      next(err);
+    });
+});
+
 router.post('/players', (req,res,next) => {
   const requiredFields = ['username', 'password'];
   const missingField = requiredFields.find(field => !(field in req.body.players));
