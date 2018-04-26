@@ -4,8 +4,8 @@ const {Strategy: LocalStrategy} = require('passport-local');
 
 const Player = require('../models/player');
 
-const localAuth = new LocalStrategy((userName, password, done) => {
-  return Player.findOne({ userName })
+const localAuth = new LocalStrategy((username, password, done) => {
+  return Player.findOne({ username })
     .then(player => {
       if (!player) {
         return Promise.reject({

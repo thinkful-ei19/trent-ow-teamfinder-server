@@ -4,7 +4,7 @@ const mongoose = require('mongoose');
 const bcrypt = require('bcryptjs');
 
 const playerSchema = new mongoose.Schema({
-  userName: { type: String, unique: true, required: true },
+  username: { type: String, unique: true, required: true },
   password: {type: String, required: true},
   skillRating: { type: Number },
   roles: { type: Array },

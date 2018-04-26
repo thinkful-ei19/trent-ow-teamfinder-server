@@ -7,7 +7,7 @@ const Player = require('./models/player');
 
 const seedPlayers = require('./db/seed/players');
 
-
+// seed production db 'mongodb://tdunk:dev@ds255889.mlab.com:55889/ow-teamfinder-db-trent'
 mongoose.connect(DATABASE_URL)
   .then(() => mongoose.connection.db.dropDatabase())
   .then(() => {

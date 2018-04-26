@@ -1,7 +1,7 @@
 [
     {
         "_id" : "000000000000000000000000",
-        "userName" : "user1",
+        "username" : "user1",
         "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
         "skillRating" : 2500,
         "roles" : ["dps", "tank", "support", "flex"],
@@ -10,7 +10,7 @@
     },
     {
         "_id" : "000000000000000000000001",
-        "userName" : "user2",
+        "username" : "user2",
         "password": "$2a$10$zA2cQsPP7oul12j7PIv0/eiWZrX16oKaEzurG6NHQtHBUXU7DQgha",
         "skillRating" : 3000,
         "roles" : ["tank", "support"],
@@ -19,7 +19,7 @@
     },
     {
         "_id" : "000000000000000000000002",
-        "userName" : "user3",
+        "username" : "user3",
         "password": "$2a$10$zA2cQsPP7oul12j7PIv0/eiWZrX16oKaEzurG6NHQtHBUXU7DQgha",
         "skillRating" : 2700,
         "roles" : ["dps"],

@@ -22,7 +22,7 @@ router.get('/players', jwtAuth, (req,res,next) => {
 });
 
 router.post('/players', (req,res,next) => {
-  const requiredFields = ['userName', 'password'];
+  const requiredFields = ['username', 'password'];
   const missingField = requiredFields.find(field => !(field in req.body.players));
 
   if (missingField) {
@@ -30,7 +30,7 @@ router.post('/players', (req,res,next) => {
     err.status = 422;
     return next(err);
   }
-  const stringFields = ['userName', 'password'];
+  const stringFields = ['username', 'password'];
   const notString = stringFields.find(field => field in req.body.players && typeof req.body.players[field] !== 'string');
   if (notString) {
     const err = new Error('Incorrect field type: expected string');
@@ -38,7 +38,7 @@ router.post('/players', (req,res,next) => {
     return next(err);
   }
   
-  const trimmedFields = ['userName', 'password'];
+  const trimmedFields = ['username', 'password'];
   const nonTrimmedFields = trimmedFields.find(field => req.body.players[field].trim() !== req.body.players[field]);
   if (nonTrimmedFields) {
     const err = new Error('Cannot start or end with whitespace');
@@ -46,13 +46,13 @@ router.post('/players', (req,res,next) => {
     return next(err);
   }
 
-  const {userName, password, skillRating, roles, heroPool, bio} = req.body.players;
+  const {username, password, skillRating, roles, heroPool, bio} = req.body.players;
 
   
   return Player.hashPassword(password)
     .then(digest => {
       const newPlayer = {
-        userName,
+        username,
         password: digest,
         skillRating: Number(skillRating),
         roles,
