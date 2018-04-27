@@ -21,9 +21,9 @@ router.get('/players', jwtAuth, (req,res,next) => {
   
 });
 
-router.get('/players/:username', (req,res,next) => {
-  const {username} = req.params;
-  return Player.findOne({username})
+router.get('/players/:username', jwtAuth, (req,res,next) => {
+  const {id} = req.user;
+  return Player.findById(id)
     .then(result => {
       if (result) {
         res.json(result);
@@ -35,6 +35,7 @@ router.get('/players/:username', (req,res,next) => {
       next(err);
     });
 });
+
 
 router.post('/players', (req,res,next) => {
   const requiredFields = ['username', 'password'];
@@ -84,6 +85,45 @@ router.post('/players', (req,res,next) => {
         err = new Error('The username already exists');
         err.status = 400;
       }
+      next(err);
+    });
+});
+
+router.put('/players/:id', jwtAuth, (req,res,next) => {
+  const {id, username} = req.user;
+  const {skillRating, roles, heroPool, bio} = req.body;
+
+  const updatedPlayer = {
+    username,
+    skillRating,
+    roles,
+    heroPool,
+    bio
+  };
+
+  return Player.findByIdAndUpdate(id, updatedPlayer, { new : true })
+    .then(result => {
+      if (result) {
+        res.json(result);
+      } else {
+        next();
+      }
+    })
+    .catch(err => next(err));
+
+});
+
+router.delete('/players', jwtAuth, (req,res,next) => {
+  const {id} = req.user;
+  return Player.findByIdAndRemove(id)
+    .then((data) => {
+      if (data) {
+        res.status(204).end();
+      } else {
+        next();
+      }
+    })
+    .catch(err => {
       next(err);
     });
 });
