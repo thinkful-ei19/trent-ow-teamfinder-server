@@ -91,7 +91,7 @@ router.post('/players', (req,res,next) => {
 
 router.put('/players/:id', jwtAuth, (req,res,next) => {
   const {id, username} = req.user;
-  const {skillRating, roles, heroPool, bio} = req.body;
+  const {skillRating, roles, heroPool, bio} = req.body.updatedPlayer;
 
   const updatedPlayer = {
     username,

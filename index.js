@@ -29,7 +29,6 @@ app.use(
   })
 );
 
-
 app.use(express.json());
 
 passport.use(localStrategy);
