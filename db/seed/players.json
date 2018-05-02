@@ -4,7 +4,7 @@
         "username" : "user1",
         "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
         "skillRating" : 2500,
-        "roles" : ["DPS", "Tank", "Support", "Flex"],
+        "roles" : ["DPS", "Tank", "Support"],
         "heroPool": ["McCree", "Winston", "Reinhardt"],
         "bio" : ["Looking for cool players to rank up with"]
     },

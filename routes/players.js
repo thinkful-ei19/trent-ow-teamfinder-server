@@ -57,10 +57,12 @@ router.post('/players', (req,res,next) => {
   const trimmedFields = ['username', 'password'];
   const nonTrimmedFields = trimmedFields.find(field => req.body.players[field].trim() !== req.body.players[field]);
   if (nonTrimmedFields) {
-    const err = new Error('Cannot start or end with whitespace');
+    const err = new Error('username or password cannot start or end with whitespace');
     err.status = 422;
     return next(err);
   }
+
+  
 
   const {username, password, skillRating, roles, heroPool, bio} = req.body.players;
 
