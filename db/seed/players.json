@@ -35,7 +35,7 @@
                     "Moira",
                     "Zenyatta"
             ],
-            "username": "user3",
+            "username": "demoUser",
             "password": "$2a$10$zA2cQsPP7oul12j7PIv0/eiWZrX16oKaEzurG6NHQtHBUXU7DQgha",
             "skillRating": 2700,
             "email": "testemail@test.com"

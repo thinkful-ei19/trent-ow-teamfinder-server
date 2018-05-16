@@ -64,7 +64,7 @@ router.post('/players', (req,res,next) => {
 
   
 
-  const {username, password, skillRating, roles, heroPool, bio} = req.body.players;
+  const {username, password, skillRating, roles, heroPool, email} = req.body.players;
 
   
   return Player.hashPassword(password)
@@ -75,7 +75,7 @@ router.post('/players', (req,res,next) => {
         skillRating: Number(skillRating),
         roles,
         heroPool,
-        bio
+        email
       };
       return Player.create(newPlayer);
     })
@@ -93,14 +93,14 @@ router.post('/players', (req,res,next) => {
 
 router.put('/players/:id', jwtAuth, (req,res,next) => {
   const {id, username} = req.user;
-  const {skillRating, roles, heroPool, bio} = req.body.updatedPlayer;
+  const {skillRating, roles, heroPool, email} = req.body.updatedPlayer;
 
   const updatedPlayer = {
     username,
     skillRating,
     roles,
     heroPool,
-    bio
+    email
   };
 
   return Player.findByIdAndUpdate(id, updatedPlayer, { new : true })
