@@ -9,7 +9,7 @@ const playerSchema = new mongoose.Schema({
   skillRating: { type: Number },
   roles: { type: Array },
   heroPool: {type: Array},
-  bio: {type: String}
+  email: {type: String}
 });
 
 playerSchema.set('toObject', {

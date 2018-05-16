@@ -1,29 +1,321 @@
 [
     {
-        "_id" : "000000000000000000000000",
-        "username" : "user1",
-        "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
-        "skillRating" : 2500,
-        "roles" : ["DPS", "Tank", "Support"],
-        "heroPool": ["McCree", "Winston", "Reinhardt"],
-        "bio" : ["Looking for cool players to rank up with"]
+            "roles": [
+                    "DPS"
+            ],
+            "heroPool": [
+                    "McCree",
+                    "Genji",
+                    "Reaper"
+            ],
+            "username": "user1",
+            "password": "$2a$10$mzy166ztW0nERiBYVYpeEeOYhRnnda124ALbjEy0UJmkXBW6ScyEu",
+            "skillRating": 2500,
+            "email": "testemail@test.com"
     },
     {
-        "_id" : "000000000000000000000001",
-        "username" : "user2",
-        "password": "$2a$10$zA2cQsPP7oul12j7PIv0/eiWZrX16oKaEzurG6NHQtHBUXU7DQgha",
-        "skillRating" : 3000,
-        "roles" : ["Tank", "Support"],
-        "heroPool": ["Winston", "Reinhardt"],
-        "bio" : ["cool people welcome"]
+            "roles": [
+                    "Tank"
+            ],
+            "heroPool": [
+                    "Winston",
+                    "Reinhardt"
+            ],
+            "username": "user2",
+            "password": "$2a$10$zA2cQsPP7oul12j7PIv0/eiWZrX16oKaEzurG6NHQtHBUXU7DQgha",
+            "skillRating": 3000,
+            "email": "testemail@test.com"
     },
     {
-        "_id" : "000000000000000000000002",
-        "username" : "user3",
-        "password": "$2a$10$zA2cQsPP7oul12j7PIv0/eiWZrX16oKaEzurG6NHQtHBUXU7DQgha",
-        "skillRating" : 2700,
-        "roles" : ["DPS"],
-        "heroPool": ["Genji", "Widowmaker"],
-        "bio" : ["no toxicity"]
+            "roles": [
+                    "Support"
+            ],
+            "heroPool": [
+                    "Mercy",
+                    "Moira",
+                    "Zenyatta"
+            ],
+            "username": "user3",
+            "password": "$2a$10$zA2cQsPP7oul12j7PIv0/eiWZrX16oKaEzurG6NHQtHBUXU7DQgha",
+            "skillRating": 2700,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "Tank",
+                    "Support"
+            ],
+            "heroPool": [
+                    "D Va",
+                    "Winston",
+                    "Moira",
+                    "Zenyatta"
+            ],
+            "username": "tdunk",
+            "password": "$2a$10$AX0p8f.jabmM.Hl2/CmRBey3kjxhL4nz0KSYtUWiAkSqjSUTCHmtW",
+            "skillRating": 2513,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "Support"
+            ],
+            "heroPool": [
+                    "Brigitte",
+                    "Lúcio",
+                    "Mercy"
+            ],
+            "username": "user4",
+            "password": "$2a$10$oCrC4vy4iJQQ03LN0vIuLOJTBUkBrCRZQUAerKJ7hpBSpeE4Hor8y",
+            "skillRating": 1200,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "Tank"
+            ],
+            "heroPool": [
+                    "Orisa",
+                    "Roadhog",
+                    "Zarya",
+                    "Mercy"
+            ],
+            "username": "testuser1234",
+            "password": "$2a$10$A0OXdfJE6qj25QO5AJepdudfGKv3fgaoeEhqL9lSDj9QfCW0ygwIa",
+            "skillRating": 1700,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS"
+            ],
+            "heroPool": [
+                    "Doomfist",
+                    "Genji",
+                    "McCree",
+                    "Pharah",
+                    "Reaper",
+                    "Soldier: 76",
+                    "Tracer",
+                    "Junkrat"
+            ],
+            "username": "testuser5847",
+            "password": "$2a$10$zd1WZYeygR9p/8I9i6dt6u0QfP1YgW4UUj5A0kri.Z0IjTxPklRyG",
+            "skillRating": 3100,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS"
+            ],
+            "heroPool": [
+                    "Genji",
+                    "Sombra",
+                    "Tracer",
+                    "Widowmaker"
+            ],
+            "username": "user8439",
+            "password": "$2a$10$kk5nZfcQ5xfqCup4yq.dcOEXp/6iId7Wqzg5PZEkgxqn9shYGwvny",
+            "skillRating": 4200,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS",
+                    "Tank",
+                    "Support"
+            ],
+            "heroPool": [
+                    "Junkrat",
+                    "Mei",
+                    "D Va",
+                    "Reinhardt",
+                    "Lúcio",
+                    "Zenyatta"
+            ],
+            "username": "user9302",
+            "password": "$2a$10$xHt8LpMoaV8CIsXYgzeNd.fJkPODE8RYhoHvkWJcm4k4y3ZhXIgLK",
+            "skillRating": 2330,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS",
+                    "Support"
+            ],
+            "heroPool": [
+                    "Pharah",
+                    "Soldier: 76",
+                    "Ana",
+                    "Brigitte",
+                    "Moira"
+            ],
+            "username": "usertest4389",
+            "password": "$2a$10$CFOliCcR4di0x32C3wtWx./m4Lr9NlktmJEZUlUW1RSnvQGsKQCDW",
+            "skillRating": 1905,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [],
+            "heroPool": [
+                    "Sombra",
+                    "Mei",
+                    "D Va",
+                    "Brigitte",
+                    "Mercy"
+            ],
+            "username": "rosuav",
+            "password": "$2a$10$X21NIepvq90VQltxbfINge5aEOoI.e2Cl8Q4kog3cP61/StmdR7C2",
+            "skillRating": 1,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS",
+                    "Support"
+            ],
+            "heroPool": [
+                    "Sombra",
+                    "D Va",
+                    "Brigitte",
+                    "Mercy"
+            ],
+            "username": "Rosuav",
+            "password": "$2a$10$41bZtwZd.nkNY1tvDRXjfOrhMG6ipwhFjrpY9iRmzOQSt1kddyGQO",
+            "skillRating": 1,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "Support"
+            ],
+            "heroPool": [
+                    "Mercy",
+                    "Moira",
+                    "Zenyatta"
+            ],
+            "username": "testuser3245",
+            "password": "$2a$10$e9/pjaJZvoCLCayIvnWB6OVt0b2QhbjosfmXLrIP.NWqRrJ3wEcZi",
+            "skillRating": 2450,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS"
+            ],
+            "heroPool": [
+                    "Mei",
+                    "Zarya"
+            ],
+            "username": "testUser",
+            "password": "$2a$10$Ej6.bPP.CQHUf1glNUbbIuTfQ7MEcmk5ttCwONmTBLjvVqIXXtDYS",
+            "skillRating": 4,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS"
+            ],
+            "heroPool": [
+                    "McCree"
+            ],
+            "username": "testuser",
+            "password": "$2a$10$KdYVyMrPWvIlkR7b/ogMaeIJY2fSrY3iVSX7UVJfxHCVgseEuCPAy",
+            "skillRating": 16,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "Tank"
+            ],
+            "heroPool": [
+                    "Genji",
+                    "D Va",
+                    "Roadhog",
+                    "Winston",
+                    "Zarya"
+            ],
+            "username": "tdunk5",
+            "password": "$2a$10$.0FpD10x43/H0JBvMopY8u8fLFg69t6NFVH.CcXetQ.1jDcHG3tKS",
+            "skillRating": 2450,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS"
+            ],
+            "heroPool": [
+                    "Genji",
+                    "McCree",
+                    "Pharah",
+                    "Reaper"
+            ],
+            "username": "Tdunk10",
+            "password": "$2a$10$ZCzsJlWZQuv6eLEXuKZb4eshhZ5VE5obCRa.lGFsXpWJIq6ro1Fum",
+            "skillRating": 2300,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "Support"
+            ],
+            "heroPool": [
+                    "Symmetra"
+            ],
+            "username": "jharris",
+            "password": "$2a$10$FQiD5AJbhPykWm0j8CHPWeW7Of1LvxQ4FL31eQXmqgIJ7DDx4tjHe",
+            "skillRating": 100,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [],
+            "heroPool": [],
+            "username": "Jharris2",
+            "password": "$2a$10$T6cGjM3YCbbaP7HgxkvNdeH.p3JCjFKRM0bEfZHB3.OQs5S0KGbTG",
+            "skillRating": 200,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS"
+            ],
+            "heroPool": [
+                    "Doomfist",
+                    "McCree",
+                    "Reaper",
+                    "Soldier: 76"
+            ],
+            "username": "tdunk8374",
+            "password": "$2a$10$RjbZbLNCh/Xe2thLcIEBpOeJD/9SY4NjclgjkuRaDgX6X0vrbtMqu",
+            "skillRating": 2700,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "Support"
+            ],
+            "heroPool": [
+                    "Lúcio",
+                    "Mercy",
+                    "Moira"
+            ],
+            "username": "newuser34895",
+            "password": "$2a$10$LVy0J2EIr6Wc9.0QWni19e3HakdxFrAb0ktA9.z4BX/k/j5mbX1JO",
+            "skillRating": 2800,
+            "email": "testemail@test.com"
+    },
+    {
+            "roles": [
+                    "DPS"
+            ],
+            "heroPool": [
+                    "Pharah",
+                    "Reaper",
+                    "Junkrat"
+            ],
+            "username": "tdunk3748",
+            "password": "$2a$10$649m2UqBwAKg5L.7mCHRKeS44V1QgV5hgN.KGfGPImRDQ.0Kv9Ox.",
+            "skillRating": 3100,
+            "email": "testemail@test.com"
     }
 ]
